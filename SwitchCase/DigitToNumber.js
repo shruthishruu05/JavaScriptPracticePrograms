@@ -1,7 +1,6 @@
 function printValue(digit)
 {
-    switch(digit)
-    {
+    switch(digit){
         case '0' : console.log("zero");
         break;
 
