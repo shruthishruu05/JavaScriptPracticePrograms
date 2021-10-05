@@ -5,6 +5,7 @@ const readline = require('readline').createInterface({
 
 let flag = true;
 readline.question("enter a maximum number in the range", number => {
+    
     number = parseInt(number);
     for(let i = 1; i < number; i++){
         flag = true;
