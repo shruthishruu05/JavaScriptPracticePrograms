@@ -5,4 +5,6 @@ if(month >=3 && month <= 6 && day <=31)
     console.log("TRUE");
 }
 else
-console.log("FALSE");
+{
+    console.log("FALSE");
+}
