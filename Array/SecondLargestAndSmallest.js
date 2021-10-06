@@ -14,26 +14,13 @@ for (let index = 0 ; index < 10 ; index++){
     console.log(numberArray[index] + " ");
 }
 
-for(index = 0 ; index < numberArray.length ; index ++){
-    let currentElement = numberArray[index];
-    if(currentElement > largestNumber)
-        largestNumber = currentElement;
-
-    if(currentElement < smallestNumber)
-        smallestNumber = currentElement;
+numberArray.sort();
+var limit =10;
+console.log("The sorted array is ");
+for (let index = 0 ; index < limit ; index++){
+    numberArray.push(generateRandomNumber());
+    console.log(numberArray[index] + " ");
 }
 
-console.log("Largest Element : " + largestNumber);
-console.log("Smallest Element : " + smallestNumber);
-
-for(index = 0 ; index < numberArray.length ; index ++){
-    let currentElement = numberArray[index];
-    if(currentElement > secondLargestNumber && currentElement < largestNumber)
-        secondLargestNumber = currentElement; 
-
-    if(currentElement < secondSmallestNumber && currentElement > smallestNumber)
-        secondSmallestNumber = currentElement;
-}
-
-console.log("Second Largest Element : " + secondLargestNumber);
-console.log("Second Smallest Element : " + secondSmallestNumber);
+console.log("Second Largest element is "+numberArray[limit-2]);  
+console.log("Second Smallest element is "+numberArray[1]);
