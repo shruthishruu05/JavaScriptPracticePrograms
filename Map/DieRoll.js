@@ -5,7 +5,8 @@ max = 1;
 min = 10;
 maxValue = 0;
 minValue =0;
-function RollDie() {
+function RollDie() 
+{
     let value = Math.floor(Math.random() * 6 + 1);
     console.log("Die Result: " + value);
     return value;
