@@ -1,5 +1,5 @@
 
-    var num = 15;
+    var num = 48;
     let array = new Array();
     for(var i = 2;i<=num;i++)
     {
